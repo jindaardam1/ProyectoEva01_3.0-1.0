@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "eva";
+    src: url(resources/evangelion-trial.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: eva;
+   
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    max-height: 13%;
+    max-width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(82, 208, 83)
+  }
+  
+  .active {
+    background-color: rgb(118, 88, 152);
+  }
+div li{
+    position: relative;
+    left: 80%;
+
+}
+#iniciar{
+    top: 45px;
+    position: relative;
+}
+body{
+    background-color: cornflowerblue;
+    max-height: 77%;
+    max-width: 100%;
+}
+footer{
+    max-height: 10%;
+    max-width: 100%;
+}
+#home{
+
+}
