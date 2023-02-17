@@ -119,13 +119,7 @@
     margin-top: 20px;
     font-size: 20px; /* Increases the font size of the paragraphs */
     text-align: center; /* Centers the text */
-  }
- #image1{
-  position: relative;
-  height: 20%;
-  width: 20%;
- }
-  
+  }  
   label {
     font-size: 16px; /* Increases the font size of the labels */
   }
