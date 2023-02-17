@@ -1,0 +1,13 @@
+body{
+    background-color: blueviolet;
+}
+img{
+  width: 40%;  
+  height: 40%;
+  left: 30%;
+  position: relative;
+}
+h1{
+  position: relative;
+  left: 32%;
+}
