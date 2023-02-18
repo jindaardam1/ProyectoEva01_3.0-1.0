@@ -106,7 +106,7 @@ body {
   background-color: rgb(82, 208, 83);
   margin: 0 auto;
   padding: 10px;
-  width: 100%;
+  width: 80%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -118,7 +118,10 @@ body {
   }
 }
 
-/* Estilos para dispositivos móviles */
+  .registro {
+    margin-left: 0;
+  }
+  /* Media queries for tablets */
 @media screen and (max-width: 768px) {
   ul {
     flex-direction: column;
@@ -137,4 +140,31 @@ body {
   }
 
   .registro {
-    margin-left: 0;}
+    margin-left: 0;
+  }
+
+  .texto1 {
+    font-size: 16px;
+  }
+}
+
+
+/* Media queries for phones */
+@media screen and (max-width: 480px) {
+  li a {
+    font-size: 18px;
+  }
+
+  #logo {
+    width: 80px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
