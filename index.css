@@ -158,6 +158,7 @@ h2 {
 .personajes {
   display: flex;
   flex-wrap: wrap;
+  border : solid rgb(82, 208, 83)3px;
 }
 
 .personaje {

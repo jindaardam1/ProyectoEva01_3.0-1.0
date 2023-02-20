@@ -1,18 +1,17 @@
-/* Carga la fuente personalizada */
+
 @font-face {
     font-family: "eva";
     src: url(resources/evangelion-trial.otf);
   }
   
-  /* Configuración por defecto para todos los elementos */
+
   * {
     margin: 0;
     padding: 0;
     font-family: eva;
   }
   
-  /* Configuración para la lista de elementos del menú */
-  ul {
+    ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -22,7 +21,11 @@
     max-height: 10%;
     max-width: 100%;
   }
-  
+ .imagen{
+  width: 100px;
+  height: 100px;
+ }
+
   /* Configuración para cada elemento de la lista */
   li {
     float: left;
@@ -102,17 +105,7 @@
 
   
   /* Configuración para el pie de página */
-  footer {
-    background-color: black;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 10%;
-    color:white;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: small;  
-  }
+
     /*MERCHA*/
 
     h1{

@@ -3,7 +3,22 @@
   font-family: "eva";
   src: url(resources/evangelion-trial.otf);
 }
-
+#imgizq{
+  position: absolute;
+  top: 20rem;
+  left: 10rem;
+  width: 500px;
+  width: 500px;
+  border : solid rgb(82, 208, 83)3px;
+}
+#imgder{
+  position: absolute;
+  top: 20rem;
+  left: 80rem;
+  width: 480px;
+  width: 480px;
+  border : solid rgb(82, 208, 83)3px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -101,7 +116,7 @@ form {
 }
 
 textarea {
-  width: 350px;
+  width: 380px;
   height: 50px;
 }
 
@@ -116,7 +131,7 @@ label {
 }
 
 
-/* Media queries for tablets */
+
 @media screen and (max-width: 768px) {
   ul {
     flex-direction: column;
@@ -140,7 +155,7 @@ label {
 }
 
 
-/* Media queries for phones */
+
 @media screen and (max-width: 480px) {
   li a {
     font-size: 18px;
