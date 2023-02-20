@@ -92,6 +92,11 @@ body {
   background-size: cover;
 }
 
+
+/* APARTIR DE AQUÍ COMIENZA LO DISTINTÍVO DE EL INDICE*/
+
+
+
 .caratula {
   position: relative;
   width: 100%;
@@ -106,10 +111,161 @@ body {
   background-color: rgb(82, 208, 83);
   margin: 0 auto;
   padding: 10px;
-  width: 100%;
+  width: 80%;
   text-align: center;
   text-transform: uppercase;
 }
+
+h2 {
+  text-align: center;
+  text-transform: uppercase; 
+  color: #fff; 
+  font-size: 3rem; 
+  margin: 2rem; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+
+} 
+
+.autor {
+  overflow: hidden; /* limpiar el float */
+}
+
+.imagen-autor {
+  width: 50%;
+  float: left; /* se queda a la izquierda */
+}
+
+#autorImagen {
+  margin-left: 100px;
+  width: 500px;
+  height: auto;
+}
+
+.text-autor {
+  width: 45%;/* 45%+5%=50% */
+  float: right; /* se queda a la derecha */
+  margin-right:5%;
+  font-size: 20px;
+  color:rgb(82, 208, 83);
+  text-align: justify;
+  text-transform: uppercase;
+}
+
+
+
+
+.personajes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.personaje {
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 0.5rem; 
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.personaje img {
+  max-width: 100%;
+}
+
+.personaje h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase; 
+  color: rgb(82, 208, 83); 
+  margin: 2rem; 
+  
+}
+
+
+
+
+.premios-info {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+#li{
+  margin:100px;
+}
+
+
+/* Agregamos un estilo para el fondo del ul */
+.premios-info {
+  background-color: rgb(118, 88, 152);
+  padding: 20px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  text-transform: uppercase;
+  background-color: rgb(118, 88, 152);
+  color: white;
+  font-size: 14px;
+  padding: 20px 0;
+ /*position: fixed;*/
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 300px;
+  margin-left: 10%;
+}
+
+.footer-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-info li:before {
+  content: "✓ ";
+  color: #82d051;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
@@ -118,7 +274,10 @@ body {
   }
 }
 
-/* Estilos para dispositivos móviles */
+  .registro {
+    margin-left: 0;
+  }
+  /* Media queries for tablets */
 @media screen and (max-width: 768px) {
   ul {
     flex-direction: column;
@@ -137,4 +296,31 @@ body {
   }
 
   .registro {
-    margin-left: 0;}
+    margin-left: 0;
+  }
+
+  .texto1 {
+    font-size: 16px;
+  }
+}
+
+
+/* Media queries for phones */
+@media screen and (max-width: 480px) {
+  li a {
+    font-size: 18px;
+  }
+
+  #logo {
+    width: 80px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
