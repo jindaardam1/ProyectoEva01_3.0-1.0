@@ -42,25 +42,81 @@
   /* CONFIGURACIÓN DEL H1 */
   h1 {
     text-align: center;
-    font-size: 3em;
-    color: rgb(118, 88, 152);
+      font-size: 100px;
+      margin-top: 10px;
+      background-image: linear-gradient(to right, rgb(82, 208, 83) 10%, rgb(201, 34, 30));
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-stroke: 2px black;
   }
 
+  /* CONFIGURACIÓN DEL DIV DE TEMAS */
   .temas {
     display: flex;
     flex-wrap: wrap;
-    background-color: green;
+    background-color: rgb(46, 134, 47);
     margin-left: 10%;
     margin-right: 10%;
+    border-radius: 8px;
     padding: 10px;
   }
 
+  /* CONFIGURACIÓN DECADA UNO DE LOS DIVS QUE CONTIENEN CADA TEMA */
   .cadatema {
     flex-basis: 100%;
-    background-color: red;
+    background-color: rgb(158, 128, 182);
+    color: white;
+    text-align: center;
     border-radius: 15px;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
+    transition: border 0.2s, box-shadow 0.2s;
+  }
+
+  .cadatema a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+  }
+
+  .cadatema:hover {
+    border: 1px solid rgb(201, 34, 30);
+    box-shadow: 0 0 10px rgba(201, 34, 30, 0.5);
+    color: rgb(201, 34, 30);
+    cursor: pointer;
+  }
+
+  .cadatema a:hover {
+    text-decoration: none;
+    color: rgb(201, 34, 30);
+  }
+
+  /* CONFIGURACIÓN DEL DIV DE TEMAS */
+  .descripcion {
+    border: 1px solid rgb(83, 58, 103);
+    border-radius: 10px;
+    margin: 15px 0 5px 0;
+    width: 100%;
+  }
+  
+  .descripcion p {
+    margin: 10px;
+    text-align: justify;
+  }
+
+  .respyvis {
+    overflow: auto;
+    margin: 10px 0 0 0;
+  }
+
+  .resp {
+    float: right;
+  }
+
+  .vis {
+    float: left;
   }
   
   a.logo{
@@ -113,7 +169,7 @@
   
   /* Configuración por defecto para todo el cuerpo del documento y el fondo*/
   body {
-    background-color: darkgray;
+    background-color: rgb(118, 88, 152);
     max-height: 82%;
     max-width: 100%;
     background-image: url('imgs/fodo-provisional.png');
@@ -130,13 +186,17 @@
   }
   
   /* Estilos para dispositivos móviles */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 550px) {
     .texto1 {
       font-size: 16px;
     }
+
+    .descripcion {
+      display: none;
+    }
   }
   
-  /* Estilos para dispositivos móviles */
+  /* Estilos para dispositivos táblet */
   @media screen and (max-width: 768px) {
     ul {
       flex-direction: column;
@@ -169,9 +229,9 @@
   }
 
 
-
+  /* CONFIGURACIÓN DEL FOOTER */
   footer {
-    background-color: grey;
+    background-color: rgb(201, 34, 30);
     padding: 20px;
   }
   
@@ -212,14 +272,39 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+
   }
   
   .legal-links a {
     display: block;
     margin: 0 10px;
     font-size: 14px;
+    color: black;
   }
   
   .branding {
     text-align: center;
+  }
+
+  /* Estilo para la barra de desplazamiento */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Estilo para el track de la barra de desplazamiento */
+  ::-webkit-scrollbar-track {
+    background-color: #292b2e;
+  }
+
+  /* Estilo para el thumb (el "pulgar") de la barra de desplazamiento */
+  ::-webkit-scrollbar-thumb {
+   background-color: #5f5f5f;
+   border-radius: 5px;
+   border: 3px solid #e3cda4;
+   background-image: linear-gradient(45deg, rgb(118, 88, 152), rgb(82, 208, 83), rgb(201, 34, 30));
+  }
+
+  /* Estilo para el thumb de la barra de desplazamiento cuando está siendo arrastrado */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #848484;
   }
