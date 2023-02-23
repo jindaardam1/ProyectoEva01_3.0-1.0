@@ -8,10 +8,17 @@
     flex-wrap: wrap;
     background-color: rgb(118, 88, 152);
     border: solid rgb(82, 208, 83);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+#sub{
+  background-color: blueviolet;
+  position: relative;
 }
 #imgizq{
   position: absolute;
-  top: 40%;
+  top: 80%;
   left: 5%;
   width: 20%;
   height: 25%;
@@ -19,7 +26,7 @@
 }
 #imgder{
   position: absolute;
-  top: 40%;
+  top: 80%;
   left: 75%;
   width: 20%;
   height: 25%;
@@ -120,15 +127,18 @@ form {
   max-width: 400px;
   margin: 0 auto;
   border: solid rgb(82, 208, 83);
-  max-height: 70%;
   margin-bottom: 50px;
+  border-radius: 10px;
 }
 
 textarea {
-  width: 380px;
+  width: 400px;
   height: 50px;
 }
-
+#preg{
+  padding: 20px;
+  margin: 20px;
+}
 p {
   margin-top: 20px;
   font-size: 20px;
@@ -199,7 +209,14 @@ label {
     text-align: center;
   }
 
-
+  @media screen and (max-width: 1577px) {
+    #imgizq{
+      display: none;
+    }
+    #imgder{
+      display: none;
+    }
+  }
 @media screen and (max-width: 768px) {
   ul {
     flex-direction: column;
