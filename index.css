@@ -107,7 +107,7 @@ body {
   text-align: center;
   background-image: url(imgs/fondo-blanco.jpg);
   background-size: cover;
-  
+  display: block;
   background-position: 50% 15%;
 }
 
@@ -166,6 +166,8 @@ h2 {
   flex-wrap: wrap;
   border : solid rgb(82, 208, 83)3px;
   border-radius: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 .personaje {
@@ -193,7 +195,9 @@ h2 {
   
 }
 
-
+#texto-autor{
+  display: block;
+}
 
 
 .premios-info {
@@ -220,10 +224,15 @@ h2 {
 
 
 
-/* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
   .texto1 {
     font-size: 16px;
+  }
+  #texto-autor{
+    display: none;
+  }
+  .caratula{
+    display: none;
   }
   #texto-autor{
     display: none;
@@ -233,7 +242,7 @@ h2 {
   .registro {
     margin-left: 0;
   }
-  /* Media queries for tablets */
+
 @media screen and (max-width: 768px) {
   ul {
     flex-direction: column;
@@ -254,24 +263,39 @@ h2 {
   .registro {
     margin-left: 0;
   }
+  .personaje-text {
+    text-align: center;
+  }
 
   .texto1 {
     font-size: 16px;
   }
-  .caratula{
-    display: none;
-  }
-  #texto-autor{
-    display: none;
-  }
   .personajes {
+    text-align: center;
     display: flex;
-    max-height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 0 auto;
   }
+  .personaje {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 0 auto;
+  }
+  
 }
 
 
-/* Media queries for phones */
 @media screen and (max-width: 550px) {
   li a {
     font-size: 18px;
@@ -285,11 +309,20 @@ h2 {
     width: 100%;
     height: 100px;
   }
+  .personajes {
+      display: flex;
+      flex-direction: column;
+    
+  }
+  .personaje {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
   p {
     font-size: 18px;
   }
-}
 
   /* Estilo para la barra de desplazamiento */
   ::-webkit-scrollbar {
@@ -369,10 +402,4 @@ h2 {
     
     .branding {
       text-align: center;
-    }
-    .caratula{
-      display: none;
-    }
-    #texto-autor{
-      display: none;
     }

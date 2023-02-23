@@ -224,6 +224,9 @@ label {
   #imgder{
     display: none;
   }
+  footer{
+    height: 3%;
+  }
 }
 
 
