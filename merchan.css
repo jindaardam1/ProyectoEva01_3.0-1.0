@@ -96,10 +96,19 @@
     background-color: cornflowerblue;
     max-height: 77%;
     max-width: 100%;
-  
-    background-image: url('imgs/fodo-provisional.png');
     background-size: cover;
+    background-image: linear-gradient(to bottom right, rgb(118, 88, 152), black);
+    
   }
+  body {
+    
+    
+  }
+  
+  
+
+  
+
   
   
 
