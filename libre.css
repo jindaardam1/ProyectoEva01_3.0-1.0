@@ -168,10 +168,9 @@
   
   /* Configuración por defecto para todo el cuerpo del documento y el fondo*/
   body {
-    background-color: rgb(118, 88, 152);
+    background: linear-gradient(to right, black, rgb(118, 88, 152));
     max-height: 82%;
     max-width: 100%;
-    background-image: url('imgs/fodo-provisional.png');
     background-size: cover;
   }
   

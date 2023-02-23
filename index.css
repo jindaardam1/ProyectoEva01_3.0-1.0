@@ -220,27 +220,6 @@ h2 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
   .texto1 {
@@ -276,11 +255,17 @@ h2 {
   .texto1 {
     font-size: 16px;
   }
+  .caratula{
+    display: none;
+  }
+  #texto-autor{
+    display: none;
+  }
 }
 
 
 /* Media queries for phones */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   li a {
     font-size: 18px;
   }
@@ -377,4 +362,10 @@ h2 {
     
     .branding {
       text-align: center;
+    }
+    .caratula{
+      display: none;
+    }
+    #texto-autor{
+      display: none;
     }
