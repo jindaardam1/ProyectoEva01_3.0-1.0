@@ -9,6 +9,9 @@
   margin: 0;
   padding: 0;
   font-family: eva;
+  line-height: 1.5em;
+ 
+
 }
 
 /* Configuración para la lista de elementos del menú */
@@ -92,7 +95,7 @@ body {
   background-color: cornflowerblue;
   max-height: 82%;
   max-width: 100%;
-  background-color: rgb(118, 88, 152);
+  background-image: linear-gradient(to bottom left, rgb(118, 88, 152), black);
   background-size: cover;
 }
 
@@ -105,7 +108,7 @@ body {
   position: relative;
   width: 100%;
   text-align: center;
-  background-image: url(imgs/fondo-blanco.jpg);
+  background-image: url(imgs/fondo-blanco.png);
   background-size: cover;
   display: block;
   background-position: 50% 15%;
@@ -130,9 +133,14 @@ h2 {
   font-size: 3rem; 
   margin: 2rem; 
   border-radius: 0.5rem; 
+  text-shadow: 4px 4px #292b2e;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 
 } 
+
+h3{
+  text-shadow:2px 2px rgb(19, 61, 11);
+}
 
 .autor {
   overflow: hidden; 
@@ -157,6 +165,10 @@ h2 {
   color:rgb(82, 208, 83);
   text-align: justify;
   text-transform: uppercase;
+  
+  
+ 
+  
 }
 
 
@@ -338,6 +350,7 @@ h2 {
     footer {
       background-color: rgb(201, 34, 30);
       padding: 20px;
+      text-transform: uppercase;
     }
     
     .footer-container {

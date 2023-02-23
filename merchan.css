@@ -124,6 +124,7 @@
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-stroke: 2px black;
+      
     }
     
 
@@ -135,14 +136,26 @@
         text-transform: uppercase;
         color: rgb(82, 208, 83);
         margin-bottom: 20px;
+        text-shadow: 4px 4px rgb(19, 61, 11) ;
 
       }
+
+      .div-subtitulo{
+        display: block;
+        border: 3px solid rgb(83, 58, 103);
+        
+        padding: 20px 0px 0px 0px;
+        border-radius: 10px;
+        margin:30px;
+      
+        }
 
       h3{
           color:white;
           text-transform: uppercase;
           text-align: center;
           font-size: 5vw;
+          text-shadow: 4px 4px rgb(0, 0, 0) ;
       }
 
       h4{
@@ -151,6 +164,7 @@
         color:rgb(82, 208, 83);
         text-align: center;
         margin-top: 40px;
+        text-shadow: 4px 4px rgb(19, 61, 11) ;
         
       
 
@@ -166,6 +180,7 @@
 /*Estilo general*/
 
 table {
+  
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
@@ -176,6 +191,7 @@ table {
     border-radius: 10px;
     overflow: hidden;
     text-transform: uppercase;
+    
   }
   th, td {
     padding: 12px 15px;
@@ -220,8 +236,7 @@ table {
    
 }
 .divisor{
-border-bottom: 10px solid rgb(118, 88, 152); width: 100%; margin: 0 auto;
-
+  
 }
 
 .div-2, .div-4 {
@@ -272,6 +287,7 @@ border-bottom: 10px solid rgb(118, 88, 152); width: 100%; margin: 0 auto;
   footer {
     background-color: rgb(201, 34, 30);
     padding: 20px;
+    text-transform: uppercase;
   }
   
   .footer-container {
@@ -332,17 +348,26 @@ border-bottom: 10px solid rgb(118, 88, 152); width: 100%; margin: 0 auto;
 @media screen and (max-width: 550px) {
 
   .subtitulo{
+
     display: none;
   }
 
+.div-subtitulo{
+  display: none;
+}
   .texto1 {
     font-size: 16px;
   }
   table{
     font-size: 20px;
+    
   }
 
-
+  .div-1{
+   
+    overflow: hidden;
+    
+  }
   .descripcion {
     display: none;
   }
