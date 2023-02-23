@@ -11,7 +11,7 @@
 }
 #imgizq{
   position: absolute;
-  top: 55%;
+  top: 40%;
   left: 5%;
   width: 20%;
   height: 25%;
@@ -19,7 +19,7 @@
 }
 #imgder{
   position: absolute;
-  top: 55%;
+  top: 40%;
   left: 75%;
   width: 20%;
   height: 25%;
@@ -53,8 +53,7 @@ li a {
   padding: 14px 16px;
   font-size: 25px;
   text-decoration: none;
-}
-
+} s
 a.logo {
   padding: 10px;
   margin: 0;
@@ -197,7 +196,6 @@ label {
   .branding {
     text-align: center;
   }
-
 
 
 @media screen and (max-width: 768px) {
