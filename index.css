@@ -134,12 +134,12 @@ h2 {
 } 
 
 .autor {
-  overflow: hidden; /* limpiar el float */
+  overflow: hidden; 
 }
 
 .imagen-autor {
   width: 50%;
-  float: left; /* se queda a la izquierda */
+  float: left; 
 }
 
 #autorImagen {
@@ -149,8 +149,8 @@ h2 {
 }
 
 #texto-autor {
-  width: 45%;/* 45%+5%=50% */
-  float: right; /* se queda a la derecha */
+  width: 45%;
+  float: right; 
   margin-right:5%;
   font-size: 20px;
   color:rgb(82, 208, 83);
@@ -166,7 +166,6 @@ h2 {
   flex-wrap: wrap;
   border : solid rgb(82, 208, 83)3px;
   border-radius: 10px;
-  width: 100%;
   text-align: center;
 }
 
@@ -214,7 +213,7 @@ h2 {
 }
 
 
-/* Agregamos un estilo para el fondo del ul */
+
 .premios-info {
   background-color: rgb(118, 88, 152);
   padding: 20px;
@@ -222,7 +221,18 @@ h2 {
 }
 
 
-
+@media screen and (max-width: 1205px) {
+  #texto-autor{
+    display: none;
+  }
+  #autorImagen {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 40%;
+    margin-left: 100px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .texto1 {
@@ -234,14 +244,17 @@ h2 {
   .caratula{
     display: none;
   }
-  #texto-autor{
-    display: none;
+  #autorImagen {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 30%;
+    margin-left: 100px;
   }
-}
-
   .registro {
     margin-left: 0;
   }
+}
 
 @media screen and (max-width: 768px) {
   ul {
