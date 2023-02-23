@@ -1,0 +1,466 @@
+
+@font-face {
+    font-family: "eva";
+    src: url(../resources/evangelion-trial.otf);
+  }
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: eva;
+  }
+  /*CONFIGURACION MENU*/
+    ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    max-height: 10%;
+    max-width: 100%;
+  }
+ .imagen{
+  width: 100px;
+  height: 100px;
+ }
+
+  /* Configuración para cada elemento de la lista */
+  li {
+    float: left;
+    align-self: center;/* lo coloca en el medio */
+  }
+  
+  /* Configuración para el enlace dentro de cada elemento de la lista */
+  li a {
+    display: block;
+    color: rgb(118, 88, 152);
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .selecionado {
+    color: rgb(82, 208, 83);
+  }
+
+  /* Configuración para el menú */
+  .sesion:hover {
+    color: rgb(201, 34, 30);
+  }
+
+  .menu:hover {
+    color: rgb(82, 208, 83);
+  }
+  
+  a.logo{/* caja de el logo */
+  padding: 10px;
+  margin: 0;
+    
+  }
+  #logo{ /*imagen logo */
+    width: 100px;
+   }
+  
+
+  
+  
+  /* Configuración para el logo */
+  
+  li a.logo:hover:not(.active) {
+    background-color: transparent;
+  }
+  
+  li a.logo:hover img {
+    content: url(../imgs/logo_cursorEncima.png);
+  }
+  
+  li a.logo:active img {
+    content: url(../imgs/logo_clicado.png);
+  }
+  
+  
+  /* Configuración para el elemento activo */
+  .active {
+    background-color: rgb(118, 88, 152);
+  }
+  
+  
+  /* Configuración para el elemento de registro en el menú */
+  .registro {
+    align-self: center;/* lo coloca en el medio */
+    margin-left: auto; /* Alinea el elemento a la derecha */
+  }
+  
+  /* Configuración para el elemento de inicio de sesión en el menú */
+  #iniciar {
+    top: 45px;
+    position: relative;
+  }
+  
+  /* Configuración por defecto para todo el cuerpo del documento y el fondo*/
+  body {
+    background-color: cornflowerblue;
+    max-height: 77%;
+    max-width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(to bottom right, rgb(118, 88, 152), black);
+    
+  }
+
+  
+  /* Configuración para el pie de página */
+
+    /*MERCHA*/
+
+    h1{
+      text-align: center;
+      width: 100%;
+      font-size: 10vw;
+      background-image: linear-gradient(to right, rgb(118, 88, 152) 20%, rgb(255, 255, 255));
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-stroke: 2px black;
+      
+    }
+    
+
+
+      .subtitulo{
+
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: rgb(82, 208, 83);
+        margin-bottom: 20px;
+        text-shadow: 4px 4px rgb(19, 61, 11) ;
+
+      }
+
+      .div-subtitulo{
+        display: block;
+        border: 3px solid rgb(83, 58, 103);
+        
+        padding: 20px 0px 0px 0px;
+        border-radius: 10px;
+        margin:30px;
+      
+        }
+
+      h3{
+          color:white;
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 5vw;
+          text-shadow: 4px 4px rgb(0, 0, 0) ;
+      }
+
+      h4{
+        display: block;
+        font-size: 2vw;
+        color:rgb(82, 208, 83);
+        text-align: center;
+        margin-top: 40px;
+        text-shadow: 4px 4px rgb(19, 61, 11) ;
+        
+      
+
+      }
+
+
+
+
+
+
+  
+/*A PARTIR DE AQUÍ ES LA TABLA*/
+/*Estilo general*/
+
+table {
+  
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    background-color: rgb(168, 141, 199);
+    border-radius: 10px;
+    overflow: hidden;
+    text-transform: uppercase;
+    
+  }
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: rgb(118, 88, 152);
+    color: #fff;
+  }
+  tr:nth-child(even) {
+    background-color: rgb(202, 180, 228);
+  }
+  button {
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  button:hover {
+    background-color: #005b5b;
+  }
+
+
+
+
+  /*Tablas*/
+.tabla2, .tabla4{
+  margin-right: 20px;
+    width: 66%;
+    
+    
+}
+
+.tabla3, .tabla5{
+  margin-left: 20px;
+    width: 66%;
+    
+   
+}
+
+
+.div-2, .div-4 {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.div-5, .div-3 {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.imagen-derecha {
+  display: block;
+  margin-left: 10px;
+  max-width: 33%;
+  margin: 0;
+  min-width: 300px;
+
+  
+}
+
+.imagen-izquierda {
+  
+  display: block;
+  margin-right: 10px;
+  max-width: 33%;
+  margin: 0;
+  
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+  /* CONFIGURACIÓN DEL FOOTER */
+  footer {
+    background-color: rgb(201, 34, 30);
+    padding: 20px;
+    text-transform: uppercase;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .social-link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .social-link:hover {
+    color: #00aced;
+  }
+  
+  
+  .legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+  }
+  
+  .legal-links a {
+    display: block;
+    margin: 0 10px;
+    font-size: 14px;
+    color: black;
+  }
+  
+  .branding {
+    text-align: center;
+  }
+
+
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 550px) {
+
+  .subtitulo{
+
+    display: none;
+  }
+
+.div-subtitulo{
+  display: none;
+}
+  .texto1 {
+    font-size: 16px;
+  }
+  table{
+    font-size: 20px;
+    
+  }
+
+  .div-1{
+   
+    overflow: hidden;
+    
+  }
+  .descripcion {
+    display: none;
+  }
+
+  h4{
+    display: none;
+  }
+  .tabla2, .tabla4, .tabla3, .tabla5{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .divisor{
+    display: none;
+  }
+  
+ 
+
+ 
+
+
+ 
+}
+
+/* Estilos para dispositivos táblet */
+@media screen and (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    max-height: 100%;
+  }
+
+  li {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  li a {
+    font-size: 20px;
+  }
+
+  .registro {
+    margin-left: 0;
+    text-align: right;
+  }
+
+  .temas {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .tabla2, .tabla4, .tabla3, .tabla5{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  table{
+    font-size: 20px;
+  }
+
+  .imagen-izquierda{
+    display: none;
+  }
+
+  .imagen-derecha{
+    display: none;
+  }
+
+
+}
+
+  /* Estilo para la barra de desplazamiento */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Estilo para el track de la barra de desplazamiento */
+  ::-webkit-scrollbar-track {
+    background-color: #292b2e;
+  }
+
+  /* Estilo para el thumb (el "pulgar") de la barra de desplazamiento */
+  ::-webkit-scrollbar-thumb {
+   background-color: #5f5f5f;
+   border-radius: 5px;
+   border: 3px solid #e3cda4;
+   background-image: linear-gradient(45deg, rgb(118, 88, 152), rgb(82, 208, 83), rgb(201, 34, 30));
+  }
+
+  /* Estilo para el thumb de la barra de desplazamiento cuando está siendo arrastrado */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #848484;
+  }
