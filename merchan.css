@@ -164,6 +164,7 @@ table {
     margin-right: 10%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
+    font-size: 30px;
     background-color: rgb(168, 141, 199);
     border-radius: 10px;
     overflow: hidden;
@@ -199,14 +200,16 @@ table {
 
   /*Tablas*/
 .tabla2, .tabla4{
-  margin-right: 10px;
+  margin-right: 20px;
     width: 66%;
-    margin-left: 33%;
+    
+    
 }
 
 .tabla3, .tabla5{
-  margin-left: 10px;
+  margin-left: 20px;
     width: 66%;
+    
    
 }
 .divisor{
@@ -215,11 +218,13 @@ border-bottom: 10px solid rgb(118, 88, 152); width: 100%; margin: 0 auto;
 }
 
 .div-2, .div-4 {
+  overflow: hidden;
   display: flex;
   align-items: center;
 }
 
 .div-5, .div-3 {
+  overflow: hidden;
   display: flex;
   align-items: center;
 }
@@ -231,14 +236,19 @@ border-bottom: 10px solid rgb(118, 88, 152); width: 100%; margin: 0 auto;
   margin-left: 10px;
   max-width: 33%;
   margin: 0;
+  min-width: 300px;
+
   
 }
 
 .imagen-izquierda {
+  
   display: block;
   margin-right: 10px;
   max-width: 33%;
   margin: 0;
+  
+  
   
 }
 
@@ -321,6 +331,9 @@ border-bottom: 10px solid rgb(118, 88, 152); width: 100%; margin: 0 auto;
   .texto1 {
     font-size: 16px;
   }
+  table{
+    font-size: 20px;
+  }
 
 
   .descripcion {
@@ -335,8 +348,14 @@ border-bottom: 10px solid rgb(118, 88, 152); width: 100%; margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
   }
+  .divisor{
+    display: none;
+  }
   
  
+
+ 
+
 
  
 }
@@ -376,6 +395,18 @@ border-bottom: 10px solid rgb(118, 88, 152); width: 100%; margin: 0 auto;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+ 
+  table{
+    font-size: 20px;
+  }
+
+  .imagen-izquierda{
+    display: none;
+  }
+
+  .imagen-derecha{
+    display: none;
   }
 
 
