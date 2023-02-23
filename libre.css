@@ -38,6 +38,10 @@
     text-decoration: none;
   }
 
+  .selecionado {
+    color: rgb(82, 208, 83);
+  }
+
   /* CONFIGURACIÓN DEL H1 */
   h1 {
     text-align: center;
