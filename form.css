@@ -7,21 +7,22 @@
   display: flex;
     flex-wrap: wrap;
     background-color: rgb(118, 88, 152);
-    border-radius: 30%;
     border: solid rgb(82, 208, 83);
 }
 #imgizq{
   position: absolute;
-  top: 50%;
-  left: 25%;
+  top: 55%;
+  left: 5%;
   width: 20%;
+  height: 25%;
   border : solid rgb(82, 208, 83)3px;
 }
 #imgder{
   position: absolute;
-  top: 50%;
-  left: 25%;
+  top: 55%;
+  left: 75%;
   width: 20%;
+  height: 25%;
   border : solid rgb(82, 208, 83)3px;
 }
 * {
@@ -117,6 +118,9 @@ form {
   left: 2rem;
   max-width: 400px;
   margin: 0 auto;
+  border: solid rgb(82, 208, 83);
+  max-height: 70%;
+  margin-bottom: 50px;
 }
 
 textarea {
@@ -138,6 +142,9 @@ label {
   footer {
     background-color: rgb(201, 34, 30);
     padding: 20px;
+    height: 50px;
+    bottom: 0;
+    
   }
   
   .footer-container {

@@ -148,7 +148,7 @@ h2 {
   height: auto;
 }
 
-.text-autor {
+#texto-autor {
   width: 45%;/* 45%+5%=50% */
   float: right; /* se queda a la derecha */
   margin-right:5%;
@@ -225,6 +225,9 @@ h2 {
   .texto1 {
     font-size: 16px;
   }
+  #texto-autor{
+    display: none;
+  }
 }
 
   .registro {
@@ -260,6 +263,10 @@ h2 {
   }
   #texto-autor{
     display: none;
+  }
+  .personajes {
+    display: flex;
+    max-height: 100%;
   }
 }
 
